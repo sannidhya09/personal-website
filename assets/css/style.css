@@ -829,6 +829,23 @@ input {
     max-width: 540px;
   }
 
+  .home__list {
+    text-align: left;
+  }
+
+  .home__data {
+    text-align: left;
+  }
+
+  .home__list dt {
+    min-width: 80px;
+    text-align: left;
+  }
+
+  .home__list dd {
+    text-align: left;
+  }
+
   .project__item {
     display: grid;
     grid-template-columns: 1fr !important;
