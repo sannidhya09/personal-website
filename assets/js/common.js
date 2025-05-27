@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav__link');
   const sections = document.querySelectorAll('section[id]');
 
+  // ✅ Initialize EmailJS
+  emailjs.init('py5mxT6kq9OYeigKo');
+
   /*===== Remove Menu on Mobile when Link Clicked =====*/
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -58,34 +61,33 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-});
 
-/*=============== Contact Form ===============*/
-const contactForm = document.getElementById('contact-form'),
-      contactName = document.getElementById('contact-name'),
-      contactEmail = document.getElementById('contact-email'),
-      Message = document.getElementById('message'),
-      contactMessage = document.getElementById('contact-message');
+  /*=============== Contact Form ===============*/
+  const contactForm = document.getElementById('contact-form'),
+        contactName = document.getElementById('contact-name'),
+        contactEmail = document.getElementById('contact-email'),
+        Message = document.getElementById('message'),
+        contactMessage = document.getElementById('contact-message');
 
-const sendEmail = (e) => {
-  e.preventDefault();
-  if (
-    contactName.value === '' ||
-    contactEmail.value === '' ||
-    Message.value === ''
-  ) {
-    contactMessage.classList.remove('color-light');
-    contactMessage.classList.add('color-dark');
-    contactMessage.textContent = 'Write all the input fields';
-  } else {
-    emailjs
-      .sendForm(
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (
+      contactName.value === '' ||
+      contactEmail.value === '' ||
+      Message.value === ''
+    ) {
+      contactMessage.classList.remove('color-light');
+      contactMessage.classList.add('color-dark');
+      contactMessage.textContent = 'Write all the input fields';
+    } else {
+      emailjs.sendForm(
         'service_schsera',
-        'template_2u3nz5y',
-        '#contact-form',
+        'template_6lvcpnj', // ✅ Your new template ID
+        contactForm,
         'py5mxT6kq9OYeigKo'
-      )
-      .then(() => {
+      ).then(() => {
+        contactMessage.classList.remove('color-dark');
         contactMessage.classList.add('color-light');
         contactMessage.textContent = 'Message sent';
 
@@ -93,13 +95,15 @@ const sendEmail = (e) => {
           contactMessage.textContent = '';
         }, 5000);
       }, (error) => {
-        alert('OOPs! Something Went Wrong...', error);
+        contactMessage.classList.remove('color-light');
+        contactMessage.classList.add('color-dark');
+        contactMessage.textContent = 'Something went wrong. Try again later.';
+        console.error('EmailJS Error:', error);
       });
 
-    contactName.value = '';
-    contactEmail.value = '';
-    Message.value = '';
-  }
-};
-
-contactForm.addEventListener('submit', sendEmail);
+      contactName.value = '';
+      contactEmail.value = '';
+      Message.value = '';
+    }
+  });
+});
