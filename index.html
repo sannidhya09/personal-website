@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== Remixicons ===============-->
+    <!--Remixicons is an icon package which is used to icons in web dev-->
+    <!--, it can be used in many wasy and like regular css files as well.-->
+    <!--It can be included in multiple ways here it imported through link CDN-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <!--=============== Swiper Css ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!--=============== Css ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/skins/color-1.css" />
+
+    <!--=============== Skin Colors ===============-->
+    <link
+      rel="stylesheet"
+      href="assets/css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/skins/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li>
+            <a href="#home" class="nav__link active-link">Hello</a>
+          </li>
+
+          <li>
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+
+          <li>
+            <a href="#resume" class="nav__link">Resume</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+          </li>
+
+          <!-- This can be used when you have a blog section if you ever do
+          <li> 
+            <a href="#blog" class="nav__link">Blog</a>
+          </li>
+        -->
+
+          <li>
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-fill"></i>
+        </div>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+      </nav>
+    </header>
+
+    <!--=============== Main ===============-->
+    <main class="main">
+      <!--=============== Home ===============-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <!--this is for the photo in the main home page-->
+          <img src="assets/img/profileSannidhya.JPG" alt="" class="home__img"/>
+          <!--this is for the data next to the picture in home page-->
+          <div class="home__data">
+            <h1 class="home__name">Sannidhya Tiwari_</h1>
+            <p class="home__work">Computer Science Junior @ UT Dallas</p>
+            <dl class="home__list">
+              <dt>AGE:</dt>
+              <dd>20</dd>
+              <dt>PHONE:</dt>
+              <dd>+1 (214) 430-8152</dd>
+              <dt>EMAIL:</dt>
+              <dd>sannidhya.tiwari09@gmail.com</dd>
+              <dt>ADDRESS:</dt>
+              <dd>The Colony, Dallas -Texas</dd>
+            </dl>
+            <div class="home__socials">
+              <a href="https://github.com/sannidhya09" target="_blank" class="home__social-link">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/sannidhya-tiwari-3a1073255/" target="_blank" class="home__social-link">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/sannidhya.tiwari/" target="_blank" class="home__social-link">
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Hello ===============-->
+      <section class="hello section container">
+        <h2 class="section__title">Hello_</h2>
+        <p class="hello__details text-lg">I am a junior at UT Dallas majoring in Computer Science and absolutely passionate about using technology to solve real-world problems. Whether it's leading innovation as the President of the Google Developer Student Club or working on projects like InGeniuz AI to help students manage their finances, I thrive on turning bold ideas into impactful solutions. My journey in tech spans AI-powered projects, fintech models like dual arbitrage strategies, and even a COVID-19 prediction app (Covibility) that gained real traction.
+
+I’ve worn many hats — developer, project manager, finance officer — and worked in both corporate and startup-style teams. I'm deeply involved in the Dallas tech and entrepreneurial community and love collaborating, building, and learning alongside others. Beyond code, I’ve led blood donation drives, coached field hockey, and volunteered at local temples, because community matters to me just as much as innovation does.
+
+I bring energy, curiosity, and a people-first mindset to everything I do. If you’re building something meaningful and looking for someone who brings both technical edge and team spirit — let’s connect!
+        </p>
+        <a href="assets/img/Sannidhya Tiwari Latest.pdf" 
+          class="button button--flex"
+          ><i class="ri-download-line"></i> DOWNLOAD CV</a>
+      </section>
+
+      <!--=============== Services ===============-->
+      <section class="services section container" id="services">
+        <h2 class="section__title">Attributes_</h2>
+        <div class="services__container grid">
+          <div class="services__item">
+          <div class="icon__box">
+            <img src="assets/img/web-design.png" alt=""
+            class="services__icon"
+            />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+          <h3 class="services__title text-lg">VERSATILE & AI-DRIVEN</h3>
+          <p class="services_detail">
+            Proficient in Python, TensorFlow, Pandas, and scikit-learn. I build end-to-end ML pipelines and deploy AI solutions using RESTful APIs and Dockers.
+          </p>
+          </div>
+          <div class="services__item">
+          <div class="icon__box">
+            <img src="assets/img/laptop.png" alt=""
+            class="services__icon"
+            />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+          <h3 class="services__title text-lg">LEADER</h3>
+          <p class="services_detail">
+            Led UT Dallas's GDSC using Agile methodology and Notion for sprint planning.
+            Active organizer and member of various other Dallas Based Organizations.
+          </p>
+          </div>
+          <div class="services__item">
+          <div class="icon__box">
+            <img src="assets/img/paint-palette.png" alt=""
+            class="services__icon"
+            />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+          <h3 class="services__title text-lg">BUILDER</h3>
+          <p class="services_detail">
+           From dual arbitrage models to personal finance apps, 
+           I design tech-powered solutions to real financial challenges with accuracy and business relevance.
+          </p>
+          </div>
+          <div class="services__item">
+          <div class="icon__box">
+            <img src="assets/img/smartphone-call.png" alt=""
+            class="services__icon"
+            />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+          <h3 class="services__title text-lg">PEOPLE DRIVEN</h3>
+          <p class="services_detail">
+            Experienced in cross-functional team collaboration using Jira, Slack, and GitHub. 
+            Prioritize clear communication, code reviews, and shared success in distributed environments.
+          </p>
+          </div>
+          <div class="services__item">
+          <div class="icon__box">
+            <img src="assets/img/verified.png" alt=""
+            class="services__icon"
+            />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+          <h3 class="services__title text-lg">MULTITASKING PRO</h3>
+          <p class="services_detail">
+            Efficiently balance academics, leadership, and internships using Kanban boards,
+            Google Workspace, and time-blocking techniques to deliver consistent, high-quality results.
+          </p>
+          </div>
+          <div class="services__item">
+          <div class="icon__box">
+            <img src="assets/img/operator.png" alt=""
+            class="services__icon"
+            />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+          <h3 class="services__title text-lg">ENTREPRENEURIAL MINDSET</h3>
+          <p class="services_detail">
+            Passionate about innovation and startups, I actively contribute 
+            to Dallas's tech scene and college clubs to foster innovation, learning, and inclusivity.
+          </p>
+          </div>
+        </div>
+      </section>
+      <!--=============== Resume ===============-->
+      <section class="section container" id="resume">
+        <h2 class="section__title">Resume_</h2>
+        <div class="resume__container grid">
+          <div class="resume__data">
+            <h3 class="resume__title text-sm">EMPLOYMENT</h3>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">INGENIUZ AI- SOFTWARE DEV INTERN</h3>
+              <p class="resume__date text-sm">Jan 2025 - Present</p>
+              <p class="resume__description text-lg">Optimized React Native and JavaScript code, 
+                reducing app latency by over 50%. Designed intuitive UI improvements with Figma. 
+                Integrated multiple Plaid API endpoints for real-time financial data. Led usability 
+                testing with 30+ users, iterating UI based on feedback to enhance user experience and 
+                app performance.</p>
+            </div>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">FINTECH UTD- QUANTATIVE FINANCE DEVELOPER</h3>
+              <p class="resume__date text-sm">Aug 2024 - Dec 2024</p>
+              <p class="resume__description text-lg">Developed backend fintech platform using Python and 
+                SQL for dual-class arbitrage strategy, achieving 92% model accuracy in backtesting. Championed 
+                Agile workflows with Jira, improving team velocity by 28%. Managed cross-functional team 
+                deliverables and ensured timely product iterations aligned with quantitative finance goals</p>
+            </div>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">SCALENE WORKS- DATA ANALYTICS INTERN</h3>
+              <p class="resume__date text-sm">Feb 2024 - Apr 2024</p>
+              <p class="resume__description text-lg">Analyzed employee performance and satisfaction using Python 
+                and Power BI, contributing to a 7% retention increase in one quarter. Delivered actionable 
+                insights on workforce planning by assessing leave policies and collaborating with HR to 
+                implement data-driven improvements.</p>
+            </div>
+          </div>
+          <div class="resume__data">
+            <h3 class="resume__title text-sm">ACTIVITIES</h3>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">GOOGLE DEVELOPER GROUP PRESIDENT</h3>
+              <p class="resume__date text-sm">Aug 2024 - Present</p>
+              <p class="resume__description text-lg">Spearhead club initiatives at UT Dallas, 
+                organizing workshops, hackathons, and community events. Foster collaboration and 
+                skill-building among members using Agile practices and cutting-edge Google technologies
+                to empower student developers and drive innovation on campus and beyond.</p>
+            </div>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">HACK AI WINNER</h3>
+              <p class="resume__date text-sm">April 2025</p>
+              <p class="resume__description text-lg">Led a winning team in the Hack AI competition by LTIMindtree, 
+                developing an AI-powered solution with Python and machine learning. Demonstrated creativity, 
+                rapid prototyping, and teamwork under pressure, delivering a scalable, real-world impact project.</p>
+            </div>
+            <div class="resume__item">
+              <h3 class="resume__subtitle text-sm">NOTARY CLUB MANAGER</h3>
+              <p class="resume__date text-sm">Oct 2021 - Dec 2022</p>
+              <p class="resume__description text-lg">Led coordination of impactful community drives in Bangalore, 
+                including blood donations and artificial limb attachments. Organized volunteers, managed logistics, 
+                and fostered teamwork to ensure successful events that created meaningful social change and 
+                strengthened community bonds.</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!--=============== Skills ===============-->
+      <section class="section container">
+        <h2 class="section__title">Skills_</h2>
+
+        <div class="skills__container grid">
+          <div class="skills__content">
+            <h3 class="skills__title text-sm">BACKEND</h3>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Python</p>
+                    <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 90%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">SQL</p>
+                    <span class="skills__number text-sm">80%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 80%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">TensorFlow/PyTorch</p>
+                    <span class="skills__number text-sm">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 80%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">RESTful API with Flask or FastAPI</p>
+                    <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__content">
+            <h3 class="skills__title text-sm">FRONTEND</h3>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">React Native</p>
+                    <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 90%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">Figma</p>
+                    <span class="skills__number text-sm">95%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 80%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">JavaScript</p>
+                    <span class="skills__number text-sm">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 80%"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <p class="skills__name text-sm">TypeScript</p>
+                    <span class="skills__number text-sm">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage" style="width: 85%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Projects ===============-->
+      <section class="work section container" id="portfolio">
+        <h2 class="section__title">Projects_</h2>
+
+        <div class="project__categories">
+          <button class="category__btn text-xs active work" data-filter="all">ALL_</button>
+          <button class="category__btn text-xs" data-filter=".app">TOOLS_</button>
+          <button class="category__btn text-xs" data-filter=".web">WEB-SITES_</button>
+          <button class="category__btn text-xs" data-filter=".landing">SYSTEMS_</button>
+        </div>
+
+        <div class="projects__container grid">
+          <div class="project__item grid mix landing">
+            <img src="assets/img/project-1.png" alt="" class="project__img">
+
+            <div class="project__data">
+              <h3 class="project__title text-lg">RETAIL DATABASE MANAGEMENT SYSTEM</h3>
+              <p class="project__description">Developed a secure retail inventory and employee management 
+                system in Java using binary trees for efficient data handling. Implemented multi-ID authentication 
+                to safeguard sensitive employee and financial data, enabling seamless inventory updates and 
+                reliable access control across the platform. Also added intuitive tables for visuals</p>
+              <h4 class="project__stack text-xs">USED STACK:</h4>
+              <ul class="tags text-sm">
+                <li>Java</li>
+                <li>Binary Trees</li>
+                <li>JDBC</li>
+                <li>MySQL</li>
+                <li>JUnit</li>
+                <li>Gradle</li>
+              </ul>
+              <a href="" class="project__link text-sm">github.com/sannidhya09</a>
+            </div>
+          </div>
+
+          <div class="project__item grid mix web">
+            <img src="assets/img/covibilityPhoto.png" alt="" class="project__img">
+
+            <div class="project__data">
+              <h3 class="project__title text-lg">COVIBILITY PREDICTION WEBSITE</h3>
+              <p class="project__description">Developed a live COVID-19 risk prediction website 
+                using Java and Python backend, leveraging location, age, and health data. Integrated 
+                multiple APIs and designed an intuitive UI with Figma and React.js, successfully engaging 
+                over 550 active users during early 2022.</p>
+              <h4 class="project__stack text-xs">USED STACK:</h4>
+              <ul class="tags text-sm">
+                <li>Java</li>
+                <li>Python</li>
+                <li>React.js</li>
+                <li>Figma</li>
+                <li>RESTful API</li>
+                <li>AWS</li>
+              </ul>
+              <a href="" class="project__link text-sm">sannidhyatiwari09.wixsite.com/website-1</a>
+            </div>
+          </div>
+
+          <div class="project__item grid mix app">
+            <img src="assets/img/tarkAIPhoto.png" alt="" class="project__img">
+
+            <div class="project__data">
+              <h3 class="project__title text-lg">DOCUMENT AI ASSISTANT</h3>
+              <p class="project__description">Led a 4-member team to 2nd place at HackAI 2025 by 
+                building TarkAI, a generative AI assistant using LangChain, FAISS, and OCR for 
+                document-based question answering. Developed domain-specific QA systems for 
+                Taxation and Education to broaden real-world applications.</p>
+              <h4 class="project__stack text-xs">USED STACK:</h4>
+              <ul class="tags text-sm">
+                <li>LangChain</li>
+                <li>FAISS</li>
+                <li>OCR</li>
+                <li>Python</li>
+                <li>Hugging Face</li>
+                <li>Docker</li>
+              </ul>
+              <a href="" class="project__link text-sm">github.com/sannidhya09</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== Testimonials ===============-->
+      <section class="testimonials section"></section>
+
+      <!--=============== Blog ===============-->
+      <section class="blog section container" id="blog"></section>
+
+      <!--=============== Contact ===============-->
+      <section class="contact section" id="contact">
+        <div class="contact__content container">
+          <h2 class="section__title">Get in touch_</h2>
+
+          <div class="contact__container grid">
+            <div class="contact__info">
+              <dl class="contact__list">
+                <dt>Phone:</dt>
+                <dd>+1 (214) 430-8152</dd>
+                <dt>Discord:</dt>
+                <dd>Sannidhya09</dd>
+                <dt>Email:</dt>
+                <dd>sannidhya.tiwari09@gmail.com</dd>
+              </dl>
+
+              <ul class="contact__socials">
+                <li>
+                  <a href="https://www.linkedin.com/" class="contact__social-link">Linkedin</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" class="contact__social-link">Github</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" class="contact__social-link">BitBucket</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" class="contact__social-link">Facebook</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact__form">
+              <p class="contact__form-title">Or just write me a letter here_</p>
+
+              <form action="" id="contact-form">
+                <div class="contact__input-div">
+                  <input
+                   type="text"
+                   name="name"
+                   placeholder="Your name"
+                   class="contact__input"
+                   id="contact-name"
+                   />
+                </div>
+
+                <div class="contact__input-div">
+                  <input
+                   type="email"
+                   name="email"
+                   placeholder="Your e-mail"
+                   class="contact__input"
+                   id="contact-email"
+                   />
+                </div>
+
+                <div class="contact__input-div">
+                  <textarea 
+                  name="message"
+                  placeholder="Type the message here_" 
+                  class="contact__input textarea" 
+                  id="message" 
+                  cols="30" 
+                  rows="10"
+                  ></textarea>
+                </div>
+
+                <p class="contact__message text-sm" id="contact-message">Message</p>
+
+                <button type="submit" class="button contact__button">
+                  SEND
+                </button>
+              </form>
+
+              <p class="footer__copy">&copy; 2025 Built with Love by Sannidhya Tiwari</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== Style Switcher ===============-->
+    <div class="style__switcher"></div>
+
+    <!--=============== Mixitup ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== Swiper Js ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--=============== Email Js ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!--=============== Js ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== Common ===============-->
+    <script src="assets/js/common.js"></script>
+  </body>
+</html>
